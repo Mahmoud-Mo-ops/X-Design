@@ -1,9 +1,15 @@
 @import url("<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">")
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+font-family: "Robot",sans-serif;
+margin: 0; 
+height: 100%
 }
 
 html{
@@ -11,51 +17,30 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
             url("background.jpg") center top 70%/cover no-repeat border-box;
             height: 100%;
             width:100vw;
-/*background-image: url("background.jpg");*/
-/*background-repeat: no-repeat;
-background-size: cover;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-position:center top 70% ;
-position: fixed;
-background-origin: border-box;
-background-clip: border-box;
-/*background-image: linear-gradient(to top,rgba(80, 68, 18, 0.6) 10%,transparent);*/
-}
+            height: 100%;
+          }
 
-body{
-font-family: "Robot",sans-serif;
-margin: 0; 
-/*height: 100%;*/
-}
 
 .main-header{
-   	font-size: 1.2rem;
-   	text-align: center;
-   	margin: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
     padding: 35px 0;
-   	display: flex;
-   	flex-direction: column;
-   	align-content: space-between;
-   	justify-content: center;
-   	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
 
     }
-    .main-nav{
-   	display: flex;
-   	flex-direction: column;
-   	align-items: center;
-   	justify-content: center;
-   }
 
 
- .main-header__brand {
-    	display: flex;
-    	align-items: center;
-    	justify-content: center;
-    	width: 25%;
-    	background-color: #118CBc;
+.main-header__brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      background-color: #118CBc;
         border: none;
         border-radius: 20px;
         color: #fff;
@@ -68,44 +53,54 @@ margin: 0;
 
     }
 
-   .main-header__brand:hover,
-   .main-header__brand:active{
-   	         color:#118CBc;
-   	         background: #FFFFFF;
-   	         font-weight: bold;
-   	         transition: 1s;
+.main-header__brand:hover,
+.main-header__brand:active{
+             color:#118CBc;
+             background: #FFFFFF;
+             font-weight: bold;
+             transition: 1s;
    }
 
 
+.main-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+
+ 
 
 .main-nav-item ,
 .main-nav-item a {
-	text-decoration: none;
-	color: white;
-	list-style: none;
+  text-decoration: none;
+  color: white;
+  list-style: none;
 }
 
 .main-nav-item a:hover,
 .main-nav-item a:active {
-	color: #009688;
-	font-size: 1.5rem;
-
-	text-decoration: underline;
-	letter-spacing: 3px;
-	transition: 1s;
+  color: #009688;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  letter-spacing: 3px;
+  transition: 1s;
 
 }
-
+.main-nav-items {
+  padding-left: 0;
+}
 
 
 
 #productive-overview,
 #productive-overview h1{
-	color: #f1f1f1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
  
@@ -144,45 +139,45 @@ margin: 0;
 }
 
 span {
-	background: #009688;
-	height: 100%;
-	width: 0;
-    border-radius: 2rem;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	z-index: -1;
-	transition: .5s;
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: .5s;
 }
 
 .click [type="button"]:hover span{
-	width:100%;
+  width:100%;
 
 }
 
 .click [type="button"]:hover,
 .click [type="button"]:active {
-	border:none;
+  border:none;
 }
 
 
 @media (min-width: 40rem){
-   .main-header{
-   	font-size: 1.2rem;
-   	width: 85%;
-   	margin: auto;
+ .main-header{
+    font-size: 1.2rem;
+    width: 85%;
+    margin: auto;
     padding: 35px 0;
-   	display: flex;
-   	flex-direction: row;
-   	justify-content: space-between;
-   	align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
 
     }
 
-    .main-header__brand {
-    	display: flex;
-    	width: auto;
-    	background-color: #118CBc;
+ .main-header__brand {
+      display: flex;
+      width: auto;
+      background-color: #118CBc;
         border: none;
         border-radius: 2rem;
         color: #fff;
@@ -197,38 +192,42 @@ span {
 
    .main-header__brand:hover,
    .main-header__brand:active{
-   	         color:#118CBc;
-   	         background: #FFFFFF;
-   	         font-weight: bold;
+             color:#118CBc;
+             background: #FFFFFF;
+             font-weight: bold;
    }
 
 
    
    .main-nav{
-   	display: flex;
-   	flex-direction: row;
-   	align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
    }
+   .main-nav-items {
+  padding-left: 20px;
+}
+
 
    
    #productive-overview{
-	color: #FFFFFF;
-	font-size: 2rem;
-	/*display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-	/*height: 80%;*/
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	text-align: center;
-	transform: translateY(-50%);
+  color: #FFFFFF;
+  font-size: 2rem;
+  /*display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /*height: 80%;*/
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
 }
 
 #productive-overview h1 {
-	margin-bottom: 0;
+  margin-bottom: 0;
 
 }
 
@@ -254,27 +253,25 @@ span {
 }
 
 span {
-	background: #009688;
-	height: 100%;
-	width: 0;
+  background: #009688;
+  height: 100%;
+  width: 0;
     border-radius: 2rem;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	z-index: -1;
-	transition: .5s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: .5s;
 }
 
 .click [type="button"]:hover span{
-	width:100%;
+  width:100%;
 
 }
 
 .click [type="button"]:hover,
 .click [type="button"]:active {
-	border:none;
+  border:none;
 }
 }
-
-
 
