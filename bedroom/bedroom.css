@@ -10,7 +10,14 @@ body{
 font-family: "Robot",sans-serif;
 margin: 0; 
 height: 100%;
+scroll-behavior: none;
+overflow:: scroll;
 }
+
+body::-webkit-scrollbar { 
+display: none; 
+}
+
 
 body{
 background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
@@ -143,27 +150,27 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
 }
 }
 
+
 .subject{
-  color: #FFffff;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: space-between;
+ color:#fff;
+ background: blue;
+ width: 100vw;
+ display: block;
+ text-align: center;
+/* padding-right: 15px;
+ padding-top: 10px;
+ padding-bottom: 10px: */
+ padding:10px 15px 10px 1px;
+}
+.subject +div{
+  width: 100%;
 }
 
-.subject h1 {
-  color: blue;
+.subject > h1{
   font-size: 2rem;
-  margin:0 auto 15px auto;
-
-
 }
 
-.subject p {
-  line-height: 120%;
-}
+
  
 .images {
   display:flex;
@@ -179,27 +186,27 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
 
 .image-item {
   display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
  position: relative;
-}
+/* width:100%;
+*/}
 
 .btn {
   position: absolute;
+  margin: 0;
+  position: absolute;
   top: 80%;
-  right: 40%;
-  width: 8rem;
-  background-color:blue;
-  border: 2px solid blue;
-  border-radius: 2rem;
   color: #fff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 10px 2px;
+  background-color:blue;
   cursor: pointer; 
-  box-shadow: 2px 2px 1px blue;
-/*overflow: hidden;*/
+  text-decoration: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  padding: 15px 32px;
+  border-radius: 1.5rem;
+  box-shadow: 1px 1px 1px .2px blue ;
 }
 
 .btn:hover,
@@ -208,7 +215,13 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
   color: blue; 
   font-size: 1.5rem;
   font-weight: bold;
-  transition: .5s;
+  transition: .25s;
 }
 
+@media (min-width: 992px) { 
+ .images{
+  display:grid;
+
+  }
+}
 
