@@ -9,15 +9,23 @@
 body{
 font-family: "Robot",sans-serif;
 margin: 0; 
-height: 100%
+height: 100%;
+scroll-behavior: none;
+overflow:: scroll;
 }
 
-html {
+body::-webkit-scrollbar { 
+display: none; 
+}
+
+
+body{
 background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
-            url("images/background.jpg") center top 70%/cover no-repeat border-box;
+            url("../images/black.jpg") top 40% right 20%/cover no-repeat border-box;
             height: 100%;
             width:100vw;
-            height: 100%;
+            height: 100%, black;
+
           }
 
 
@@ -31,6 +39,7 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
     align-content: space-between;
     justify-content: center;
     align-items: center;
+    padding-bottom:0;  
 
     }
 
@@ -58,7 +67,6 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
              color:#118CBc;
              background: #FFFFFF;
              font-size: 1.5rem;
-             border-radius:30px;
              font-weight: bold;
              transition: 1s;
    }
@@ -94,76 +102,8 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
   padding-left: 0;
 }
 
-
-
-#productive-overview,
-#productive-overview h1{
-  color: #f1f1f1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
- 
-/*.click button{
-  background-color: #008CBA;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 10px;
-  margin: 25px 10px;
-  cursor: pointer; 
-}*/
-.click [type="button"]{
-  display: block;
-  width: 150px;
-  background-color:transparent;
-  border: 2px solid #009688;
-  border-radius: 2rem;
-  color: #fff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 10px 2px;
-  cursor: pointer; 
-  box-shadow: 2px 2px 1px #888888;
-  position: relative;
-  overflow: hidden;
-
-
-}
-
-span {
-  background: #009688;
-  height: 100%;
-  width: 0;
-  border-radius: 2rem;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: .5s;
-}
-
-.click [type="button"]:hover span{
-  width:100%;
-
-}
-
-.click [type="button"]:hover,
-.click [type="button"]:active {
-  border:none;
-}
-
-
 @media (min-width: 40rem){
+
  .main-header{
     font-size: 1.2rem;
     width: 85%;
@@ -209,71 +149,79 @@ span {
    .main-nav-items {
   padding-left: 20px;
 }
+}
 
 
-   
-   #productive-overview{
-  color: #FFFFFF;
-  font-size: 2rem;
-  /*display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  /*height: 80%;*/
-  position: absolute;
+.subject{
+ color:#fff;
+ background: blue;
+ width: 100vw;
+ display: block;
+ text-align: center;
+/* padding-right: 15px;
+ padding-top: 10px;
+ padding-bottom: 10px: */
+ padding:10px 15px 10px 1px;
+}
+.subject +div{
   width: 100%;
-  top: 50%;
-  text-align: center;
-  transform: translateY(-50%);
 }
 
-#productive-overview h1 {
-  margin-bottom: 0;
-
+.subject > h1{
+  font-size: 2rem;
 }
 
-.click [type="button"]{
-  display: inline-block;
-  width: 200px;
-  background-color:transparent;
-  border: 2px solid #009688;
-  border-radius: 2rem;
-  color: #fff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 4px 2px;
-  cursor: pointer; 
-  box-shadow: 2px 2px 1px #888888;
-  position: relative;
-  overflow: hidden;
 
-
+ 
+.images {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-span {
-  background: #009688;
-  height: 100%;
-  width: 0;
-    border-radius: 2rem;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: .5s;
+.image-item img {
+  width: 100vw;
+  height: 80vh;
 }
 
-.click [type="button"]:hover span{
-  width:100%;
+.image-item {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ position: relative;
+/* width:100%;
+*/}
 
+
+
+/*Desktop*/
+
+@media (min-width: 992px) { 
+ body {
+    overflow: -webkit-scrollbar-vertical; 
+    overflow-y: scroll;
+}  
+ .images{
+    display: inline-grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 5px;
+    margin: 5px 0px;
+ }
+
+.image-item {
+  width: 100%;
 }
 
-.click [type="button"]:hover,
-.click [type="button"]:active {
-  border:none;
-}
+ .image-item img {
+  width: 100%;
+  object-fit: cover;
+ }
+
+ .subject {
+width: 90%;
+margin: auto;
 }
 
