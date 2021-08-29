@@ -102,6 +102,121 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
   padding-left: 0;
 }
 
+
+
+
+.subject{
+ color:#fff;
+ background: blue;
+ width: 100vw;
+ display: block;
+ text-align: center;
+/* padding-right: 15px;
+ padding-top: 10px;
+ padding-bottom: 10px: */
+ padding:10px 15px 10px 1px;
+}
+.subject +div{
+  width: 100%;
+}
+
+.subject > h1{
+  font-size: 2rem;
+}
+
+
+.images {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-item img {
+  width: 100vw;
+  height: 70vh;
+}
+.image-item img:hover,
+.image-item img:active {
+  transition: width 2s, height 2s, transform 2s;
+  cursor: pointer;
+  height:80vh;
+  width: 120vw;
+  margin: 10px;
+  z-index: 1;
+}
+
+.image-item {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  color: #fff;
+  background-color:blue;
+  cursor: pointer; 
+  text-decoration: none;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  padding: 15px 32px;
+  border-radius: 1.5rem;
+  box-shadow: 1px 1px 1px .2px blue ;
+  z-index: 2;
+}
+
+.btn:hover,
+.btn:active{
+  background:white;
+  color: blue; 
+  font-size: 1.5rem;
+  font-weight: bold;
+/*  transition: .25s;
+*/}
+
+
+
+
+.main-footer {
+  background: rgba(33, 4, 138,.7);
+  margin-top:20px; 
+  height: 12vh;
+}
+
+.main-footer ul {
+   display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding-left: 0px;
+
+}
+
+.main-footer nav ul li{
+  margin-top:5px;
+}
+
+.main-footer nav ul li ,
+.main-footer nav ul li a {
+ list-style: none;
+ text-decoration: none;
+ color: #fff;
+ padding: 10px; 
+}
+
+.main-footer:hover,
+.main-footer:active {
+  background: rgba(33, 4, 138,1);
+}
+
+
+
 @media (min-width: 40rem){
 
  .main-header{
@@ -150,124 +265,15 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
   padding-left: 20px;
 }
 }
-
-
-.subject{
- color:#fff;
- background: blue;
- width: 100vw;
- display: block;
- text-align: center;
-/* padding-right: 15px;
- padding-top: 10px;
- padding-bottom: 10px: */
- padding:10px 15px 10px 1px;
-}
-.subject +div{
-  width: 100%;
-}
-
-.subject > h1{
-  font-size: 2rem;
-}
-
-
- 
-.images {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-item img {
-  width: 100vw;
-  height: 80vh;
-}
-
-.image-item {
-  display: flex;  
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- position: relative;
-/* width:100%;
-*/}
-
-.btn {
-  position: absolute;
-  margin: 0;
-  position: absolute;
-  top: 80%;
-  color: #fff;
-  background-color:blue;
-  cursor: pointer; 
-  text-decoration: none;
-  border-radius: 1.5rem;
-  font-size: 1.2rem;
-  padding: 15px 32px;
-  border-radius: 1.5rem;
-  box-shadow: 1px 1px 1px .2px blue ;
-}
-
-.btn:hover,
-.btn:active{
-  background:white;
-  color: blue; 
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: .25s;
-}
-
-
-.click [type="button"]{
-  display: block;
-  width: 150px;
-  background-color:transparent;
-  border: 2px solid #009688;
-  border-radius: 2rem;
-  color: #fff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 10px 2px;
-  cursor: pointer; 
-  box-shadow: 2px 2px 1px #888888;
-  position: relative;
-  overflow: hidden;
-}
-
-span {
-  background: #009688;
-  height: 100%;
-  width: 0;
-  border-radius: 2rem;
-  position: absolute;
-  left: 0%;
-  bottom: 0;
-  z-index: -1;
-  transition: .5s;
-}
-
-.click [type="button"]:hover span{
-  width:100%;
-
-}
-
-.click [type="button"]:hover,
-.click [type="button"]:active {
-  border:none;
-}
-
 /*Desktop*/
 
 @media (min-width: 992px) { 
+
  body {
     overflow: -webkit-scrollbar-vertical; 
     overflow-y: scroll;
 }  
+
  .images{
     display: inline-grid;
     grid-template-columns: repeat(3,1fr);
@@ -285,8 +291,28 @@ span {
   object-fit: cover;
  }
 
+.image-item img:hover,
+.image-item img:active {
+  transition: width 1s, height 1s, transform 1s;
+  cursor: pointer;
+  height:80vh;
+  width: 50vw;
+  z-index: 1;
+}
+
  .subject {
 width: 90%;
 margin: auto;
+}
+
+ .main-footer ul {
+  flex-direction: row;
+  font-size: 1.2rem;
+}
+.main-footer nav ul li {
+align-self: center;
+margin: 0 2rem;
+padding-top:2.2rem; 
+}
 }
 
