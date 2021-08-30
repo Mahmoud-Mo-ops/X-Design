@@ -2,22 +2,18 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Robot",sans-serif;
   margin: 0;
   padding: 0;
 }
 
-body{
-font-family: "Robot",sans-serif;
-margin: 0; 
-height: 100%
-}
+
 
 html {
 background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
             url("images/background.jpg") center top 70%/cover no-repeat border-box;
             height: 100%;
             width:100vw;
-            height: 100%;
           }
 
 
@@ -31,6 +27,7 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
     align-content: space-between;
     justify-content: center;
     align-items: center;
+    height: 20%;
 
     }
 
@@ -97,13 +94,13 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
 
 
 
-#productive-overview,
-#productive-overview h1{
+#productive-overview {
   color: #f1f1f1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80%;
 }
 
  
@@ -164,7 +161,7 @@ span {
 }
 
 
-@media (min-width: 40rem){
+@media (min-width: 600px){
  .main-header{
     font-size: 1.2rem;
     width: 85%;
@@ -277,4 +274,3 @@ span {
   border:none;
 }
 }
-
