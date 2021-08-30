@@ -79,6 +79,7 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
   text-decoration: none;
   color: white;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .main-nav-item a:hover,
