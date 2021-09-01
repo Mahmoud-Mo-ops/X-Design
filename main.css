@@ -28,16 +28,32 @@ body {
   font-size: 1.8rem;
   }
 
-.main-nav-brand{
-  padding: 0;
-  list-style: none;
-}
+.main-nav-brand {
+   padding: 0;
+   list-style: none;
+   border: none;
+   border: 2px solid blue;
+   border-radius: 30px;
+   padding: 10px;
+   background:#4d4dff;
+   text-align: center;
+    }
+
+.main-nav-brand:hover,
+.main-nav-brand:active{
+             background: blue;
+             border-radius:80px;
+             font-weight: bold;
+             transition: 1s;
+           }
+
 
 .main-nav-brand a {
   color: #fff;
   text-decoration-line: none;
   text-transform: uppercase;
-  font-size: 100%;
+  font-size: 80%;
+
 }
 
 
@@ -56,13 +72,27 @@ body {
   font-size: 70%;
 }
 
+.main-nav-item a:hover,
+.main-nav-item a:active {
+  color: blue;
+  font-size: 100%;
+  text-decoration: underline;
+  background: #fff;
+  letter-spacing: 1.5px;
+  transition: 1s;
+
+}
+
+.main-nav-item:hover::after,
+.main-nav-item:active {
+  width: 100%;
+}
+
 
 #content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
 }
 
 
@@ -74,6 +104,7 @@ body {
 
 .subject h1 {
   font-size: 100%;
+  text-align: center;
 }
 .subject p{
   font-size: 60%;
@@ -127,53 +158,43 @@ button:hover {
 /***********************/
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
-  #banner {
-            flex-direction: column;
-             align-items: space-between;
-            justify-content: space-around;
-
-               }
-
+  
   .main-nav {
              display: flex;
-             flex-direction: row;
-             justify-content: space-between;
-             font-size: 1.5rem;
-             flex-grow: 1;
-             font-size: 1.8rem;
-             margin: 10px;
+            align-items: center;
+             height: 20%;
+/*             margin-top: 0;
+*/             
   }
   .main-nav-brand {
-    padding-right:40px; 
+    padding-right:30px; 
   }
 
   .landscape {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
 
   }
 
   .main-nav-items {
-  padding: 0 10px;
+  padding: 0 5px;
   
 }
 
-.main-nav-brand a {
-  font-size: 80%;
-}
 
 .main-nav-items a{
   color: #fff;
   text-decoration-line: none;
   text-transform: uppercase;
-  font-size: 70%;
 }
 
 #content{
-  flex-grow: 1.75;
+ height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
+
 .subject {
   font-size: 2.5rem;
   color: white;
@@ -187,45 +208,49 @@ button:hover {
 .subject p{
   font-size: 60%;
 }
-
-.click {
-  justify-content: flex-start;
-}
 }
 
 
-/**************/
-
+/***************************************/
+/**desktop**/
 @media (min-width: 768px) { 
-
-
-               
+  #banner {
+    align-items: space-between;
+  }
   .main-nav {
-             flex-direction: row;
-             justify-content: space-between;
-             align-content: center;
-             font-size: 2rem;
-           
-             font-size: 2rem;
-             margin: 10px;
+    height: 15vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.2rem;             
+  }
+  .main-nav-brand {
+    padding-left:20px; 
   }
 
- .landscape {
-  justify-content: flex-start;
-  }
-
-
+  
+  .main-nav-items {
+  padding: 0 5px;
+  
+}
+.main-nav-item {
+  margin: 0 5px;
+}
 
 
 .subject {
-  font-size: 4.5rem;
-  
+  font-size: 5rem;
+  color: white;
 }
 
 .subject h1 {
   font-size: 100%;
 }
 .subject p{
-  font-size: 60%;
+  font-size: 50%;
 }
+}
+
 
