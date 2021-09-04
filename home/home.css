@@ -4,9 +4,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+html {
+	width: 100%;
+}
 body {
 	font-family: poppins,sans-serif;
+	width: 100%;
 }
 
 ul,nav {
