@@ -4,13 +4,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-html {
-	width: 100%;
-}
+
 body {
 	font-family: poppins,sans-serif;
-	width: 100%;
 }
+
 
 ul,nav {
 	list-style: none;
@@ -39,10 +37,6 @@ header {
     padding: 35px 100px 0 ;
 }
 
-/*overwriten*/
-/*header h1 {
-	text-transform: uppercase;
-}*/
 
 header nav {
     display: -webkit-flex;
@@ -130,10 +124,12 @@ section h3,{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	-webkit-background-size:center;
 	background-size: cover;
+	-webkit-background-position: center;
+ 	background-position: center;
     z-index: -1;
 }
 
@@ -145,7 +141,7 @@ section h3,{
 	width: 100%;
 	height: 100%;
 	background: #000;
-	opacity: 0.8;
+	opacity: 0.6;
 }
 .banner-area h1 {
 	margin-bottom: 15px;
@@ -160,11 +156,20 @@ section h3,{
 
 .banner-area a.banner-btn {
 	padding: 15px 35px;
-	background: #05164d;
+	background:  #05164d;
 	border-radius: 50px;
+	opacity: .6;
+
 	/*position: relative;
 	overflow: hidden;*/
 }
+
+.banner-area a.banner-btn:hover{
+ border: 2px solid blue;
+ box-shadow: 1px 1px 1px #05164d;
+ transition: .5s;
+}
+
 
 /*span {
 	background: #05164d;
@@ -243,7 +248,7 @@ section h3,{
 .section-title {
 	text-transform: uppercase;
 	font-size: 50px;
-	padding-top:3px; 
+	padding-top:1px; 
 	margin-bottom: 3%;
 	text-align: center; 
 	color:  #142952;
@@ -272,5 +277,245 @@ section h3,{
 	.about-content li {
 		padding: 8px;
 	}
+	#about {
+		margin-bottom: 25px;
+	}
 }
 
+/*********SERVICE AREA*******/
+#service {
+	background: #ddd;
+}
+
+.services-content{
+	width: 100%;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.services-content li {
+	flex-basis: 33%;
+	text-align: center;
+	padding: 0 30px;
+}
+
+.services-content li i {
+    font-size: 50px;
+	color: crimson;
+	margin-bottom: 25px;
+}
+
+.services-content li h4 {
+	font-size: 20px;
+	margin-bottom: 25px;
+	color: #000099;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.services-content li p {
+	margin: 0;
+}
+
+@media(max-width: 1000px) {
+	.services-content li {
+	flex-basis: 100%;
+	margin-bottom: 65px;
+}
+.services-content li:last-child {
+	margin-bottom: 0;
+}
+}
+
+
+/**CONTACT AREA**/
+#contact {
+	background: #fff;
+}
+.contact-area ul {
+	width: 100%;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+ .contact-area ul li {
+ 	flex-basis: 23%;
+	text-align: center;
+	padding: 0 30px;
+ }
+ .contact-area ul li:hover{
+ 	background:  #ccccb3;
+ }
+.contact-area li i {
+    font-size: 50px;
+	color: crimson;
+	margin-bottom: 25px;
+}
+.contact-area li p {
+	margin: 0;
+}
+
+.contact-area li p span {
+	font-size: 20px;
+	color: blue;
+	margin-right: 10px;
+}
+
+@media(max-width: 1000px) {
+	.contact-area ul li {
+	flex-basis: 100%;
+	margin-bottom: 65px;
+}
+     .contact-area ul li:last-child {
+	margin-bottom: 0;
+}
+.contact-area ul p {
+	padding: 0;
+}
+
+}
+
+/*****FEEDBACK AREA*****/
+
+.feedback-area{
+	background: #f1f1f1;
+}
+#feedback{
+	width: 100%;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#feedback .feedback-content {
+	flex-basis: 33%;
+	padding: 0 30px;
+}
+
+
+.feedback-content {
+	height: 100%;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.feedback-content > div {
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+
+
+.feedback-content .feedback-bottom {
+	text-align: center;
+}
+
+.feedback-content .feedback-bottom h3 {
+	margin-bottom: 10px;
+	font-weight: bold;
+	color:  #0000cc;
+}
+
+.feedback-content .feedback-bottom p {
+	font-size: 1rem;
+}
+
+.feedback-content .feedback-bottom p:hover {
+  color: #fff;
+  background: #000;
+  opacity: .5;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+ 
+ img {
+ 	width: 100%;
+ 	height: 100%;
+ 	border-radius: 50%;
+ }
+
+ .feedback-btn {
+ 	height: 100%;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+    background:  #0000b3;
+ }
+
+.feedback-btn h2 {
+	color: #fff;
+}
+
+
+.feedback-btn button  {
+  width: 120px;
+  padding: 15px 0;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  border:2px solid blue;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.feedback-btn button:hover {
+	  background:  #05164d;
+
+}
+
+@media(max-width: 1000px) {
+	#feedback .feedback-content {
+	flex-basis: 100%;
+	padding: 0 10px;
+}
+ .feedback-area{
+ 	margin-bottom: 0;
+ 	padding-bottom: 0;
+ }
+
+ .feedback-btn h2 {
+  font-size: 15px;
+}
+
+.feedback-btn button  {
+	padding: 10px 0;
+}
+}
