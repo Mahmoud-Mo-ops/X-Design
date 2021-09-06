@@ -618,3 +618,133 @@ section h3,{
 	padding: 0 10px;
 }
 }
+
+/**TRAINING AREA**/
+
+#train{
+	height: 700px;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+/*	flex-wrap: wrap;
+*/	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+	font-size: 150%;
+}
+
+.box-left{
+	background: #0000ff;
+	color: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+	flex-basis: 50%;
+	margin-right: 20px; 
+    margin-bottom:10px; 
+    width: 80%;
+    height: 100%;
+    border: 5px solid blue;
+    box-shadow: 3px 3px 3px #ccccff;
+}
+
+
+
+.box-right{
+	background:#0000ff;
+	color: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+	flex-basis: 50%;
+	margin-right:20px; 
+	margin-bottom:10px; 
+	border: 5px solid blue;
+	box-shadow: 3px 3px 3px #ccccff;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 60px;
+	position: relative;
+}
+
+h3::after{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: "";
+	height: 3px;
+    width: 0;
+    background: darkblue;
+    transition:1s;
+}
+
+h3:hover::after{
+	width: 100%;
+}
+
+h3:hover {
+	   cursor:pointer;
+}
+
+button{
+	width: 120px;
+	padding:15px 0;
+	text-align: center;
+	border-radius: 25px;
+	font-weight: bold;
+	color: #fff;
+	border: 2px solid  #1a1aff;
+	background:  #3333ff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+
+button:hover {
+    background: darkblue;
+    border-color: #000099;
+}
+
+
+
+@media(max-width: 1000px) {
+   #train{
+	flex-direction: column;
+	padding: 0;
+   }
+  .box-left {
+	width: 100%;
+  }
+  .box-right {
+	width: 100%;
+  }
+  section {
+  	padding: 100px 10px;
+  }
+  h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 25px;
+}
+}
