@@ -13,6 +13,8 @@ body {
 }
 
 
+
+
 #banner {
           background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
           url("images/background.jpg") center top 70%/cover no-repeat border-box;
@@ -22,10 +24,12 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
+
            }
 
 .main-nav {
   font-size: 1.8rem;
+  
   }
 
 .main-nav-brand {
@@ -37,7 +41,7 @@ body {
    padding: 10px;
    background:#4d4dff;
    text-align: center;
-    }
+      }
 
 .main-nav-brand:hover,
 .main-nav-brand:active{
@@ -113,7 +117,7 @@ body {
   display: flex;
 }
 
-button {
+.click button {
   width: 150px;
   padding: 15px 0;
   margin: 0 10px;
@@ -124,31 +128,13 @@ button {
   background:  #1a1aff;
   color: #fff;
   cursor: pointer;
-/*  position: relative;
-*/  overflow: hidden;
-}
-
-/*not work*/
-/*span{
-  background: blue;
-  height: 100%;
-  width: 0%;
-  border-radius: 25px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: .5s;
+  overflow: hidden;
 }
 
 
- span:hover span{
-  width: 100%;
-  
-}*/
 
 
-button:hover {
+.click button:hover {
   border:none;
   background: #4d4dff;
   font-size: 120%;
@@ -163,8 +149,7 @@ button:hover {
              display: flex;
             align-items: center;
              height: 20%;
-/*             margin-top: 0;
-*/             
+             
   }
   .main-nav-brand {
     padding-right:30px; 
@@ -252,5 +237,65 @@ button:hover {
   font-size: 50%;
 }
 }
+/*****************************/
+/***Backdrop Area ***/
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
 
+/*Modal*/
+.modal {
+  position: fixed;
+  top:30%;
+  left: 30%;
+  z-index: 200;
+  width: 40%;
+  display: none;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1.4rem;
+ box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: .5rem 1rem;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+  }

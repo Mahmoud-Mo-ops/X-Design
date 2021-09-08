@@ -98,7 +98,7 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
 
 #productive-overview,
 #productive-overview h1{
-  color: #f1f1f1;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,7 +247,7 @@ main{
 }
 .signup-title{
   text-align: center;
-  color:#313A75;
+  color:#fff;
   font-size: 3rem;
   text-shadow: 1.5px 1.5px .75px #888888;
 }
