@@ -8,8 +8,6 @@
 
 body{
 font-family: "Robot",sans-serif;
-margin: 0; 
--webkit-overflow-x: hidden; 
 }
 
 
@@ -17,11 +15,12 @@ body{
 background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
             url("images/black.jpg") top 40% right 20%/cover no-repeat border-box;
             height: 100%;
-            width:100vw;
-            height: 100%;
-
+            width:100%;
           }
-
+main {
+  width: 100%;
+  height: 100%;
+}
 
 .main-header{
     font-size: 1.2rem;
@@ -132,7 +131,7 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
   width: 100vw;
   height: 70vh;
 }
-.image-item img:hover,
+/*.image-item img:hover,
 .image-item img:active {
   transition: width 2s, height 2s, transform 2s;
   cursor: pointer;
@@ -140,7 +139,7 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
   width: 120vw;
   margin: 10px;
   z-index: 1;
-}
+}*/
 
 .image-item {
   display: flex;  
@@ -151,37 +150,33 @@ background: linear-gradient(to bottom,rgba(80, 68, 18, 0.6) 5%,transparent),
 }
 
 .btn {
-  position: absolute;
-  margin: 0;
+  width: 120px;
+  padding:15px 0;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid  #1a1aff;
+  background:  #3333ff;
+  cursor: pointer;
   position: absolute;
   top: 80%;
-  color: #fff;
-  background-color:blue;
-  cursor: pointer; 
-  text-decoration: none;
-  border-radius: 1.5rem;
-  font-size: 1.2rem;
-  padding: 15px 32px;
-  border-radius: 1.5rem;
-  box-shadow: 1px 1px 1px .2px blue ;
+  overflow: hidden;
   z-index: 2;
 }
 
 .btn:hover,
 .btn:active{
-  background:white;
-  color: blue; 
-  font-size: 1.5rem;
-  font-weight: bold;
-/*  transition: .25s;
-*/}
+   background: darkblue;
+    border-color: #000099;
+  
+}
 
 
 
 
 .main-footer {
   background: rgba(33, 4, 138,.7);
- /* margin-top:20px; */
   height: 12vh;
 }
 
