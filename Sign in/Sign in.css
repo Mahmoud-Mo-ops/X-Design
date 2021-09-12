@@ -88,6 +88,9 @@ header nav li:last-child {
         .main-header{
         	padding: 20px 10px;
         }
+         .first{
+         	padding-left: 0;
+         }
 	}
 
 	main{
