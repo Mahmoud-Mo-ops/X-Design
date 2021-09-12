@@ -3,6 +3,8 @@
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
 }
 
 body {
@@ -253,12 +255,7 @@ header nav li:last-child {
 
 .btn-feed{
 	width: 50%;
-    border: 3px solid #00e600;
-    padding: 10px;
-    background: transparent;
-    color: #fff;
-    font-size: 18px;
-    margin: 10px;
-    cursor: pointer;
+  
 }
 }
+
