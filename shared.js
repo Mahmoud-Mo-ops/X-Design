@@ -3,8 +3,9 @@ var modal =document.querySelector('.modal');
 var selectPlanButtons =document.querySelectorAll('.sign');
 var noButton=document.querySelector(".modal__action--negative");
 var noButton=document.querySelector(".modal__action--negative");
-var log=document.querySelectorAll(".login")
-var loginBox=document.querySelector(".login-box")
+var log=document.querySelectorAll(".login");
+var loginBox=document.querySelector(".login-box");
+
 
 for (var i = 0; i < selectPlanButtons.length; i++) {
 	    selectPlanButtons[i].addEventListener('click', function() {
