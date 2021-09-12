@@ -130,6 +130,7 @@ header nav li:last-child {
 }
 .feed-area {
 	padding-top: 3rem;
+	padding-bottom: 2rem;
 	z-index: 1;
 	background: #000;
 	opacity: .7;
