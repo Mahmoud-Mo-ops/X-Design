@@ -76,7 +76,11 @@ header nav li:last-child {
 			margin-bottom: 15px;
      	}
         header nav li {
-        	margin: 0 7px;
+        	margin: 0 ;
+        	padding: 5px;
+        }
+        header{
+        	padding: 20px 10px;
         }
 	}
 
@@ -163,33 +167,13 @@ section h3,{
 	border-radius: 50px;
 	opacity: .6;
 
-	/*position: relative;
-	overflow: hidden;*/
-}
+	}
 
 .banner-area a.banner-btn:hover{
  border: 2px solid blue;
  box-shadow: 1px 1px 1px #05164d;
  transition: .5s;
 }
-
-
-/*span {
-	background: #05164d;
-	height: 100%;
-	width: 0%;
-	border-radius:50px;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	z-index: -1;
-	transition: .5s;
-}
-
-.banner-area a.banner-btn:hover,
-.banner-area a.banner-btn:active span{
-	width: 100%;
-}*/
 
 
 
