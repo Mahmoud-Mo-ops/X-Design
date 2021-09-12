@@ -101,6 +101,7 @@ header nav li:last-child {
 /*feedback*/
 	
 #feed {
+	padding-top:4rem; 
 	width: 100vw;
 	height: 100vh;
 	display: -webkit-flex;
@@ -128,6 +129,7 @@ header nav li:last-child {
 	z-index: -1;
 }
 .feed-area {
+	padding-top: 3rem;
 	z-index: 1;
 	background: #000;
 	opacity: .7;
