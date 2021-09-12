@@ -36,7 +36,8 @@ header {
 	align-items: center;
 	color: #fff;
 /*    padding: 35px 100px 0 ;*/
-       padding: 15px 100px;
+       padding: 10px 100px;
+
 
 }
 
@@ -186,9 +187,10 @@ section h3,{
 @media (max-width:800px){
 	
 		.banner-area h1 {
-		font-size: 32px;
+		font-size: 25px;
+		margin-top: 20px;
 	}
-	.bannner h3 {
+	.banner-area h3 {
 		font-size: 20px;
 	}
 	.banner-area a.banner-btn{
