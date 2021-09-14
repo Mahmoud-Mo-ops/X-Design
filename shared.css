@@ -99,9 +99,6 @@ main {
  width: 100vw;
  display: block;
  text-align: center;
-/* padding-right: 15px;
- padding-top: 10px;
- padding-bottom: 10px: */
  padding:10px 15px 10px 1px;
 }
 .subject +div{
@@ -159,42 +156,6 @@ main {
 
 
 
-
-.main-footer {
-  background: rgba(33, 4, 138,.7);
-  height: 100%;
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-footer ul {
-   display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center; 
-  justify-content: space-between;
-  margin: 0;
-}
-
-.main-footer nav ul li{
-  padding-top:5px;
-}
-
-.main-footer nav ul li ,
-.main-footer nav ul li a {
- list-style: none;
- text-decoration: none;
- color: #fff;
- padding: 10px; 
-}
-
-.main-footer:hover,
-.main-footer:active {
-  background: rgba(33, 4, 138,1);
-}
 
 
 
@@ -283,14 +244,88 @@ width: 100%;
 margin: 0;
 }
 
- .main-footer ul {
-  flex-direction: row;
-  font-size: 1.2rem;
-}
-.main-footer nav ul li {
-align-self: center;
-margin: 0 2rem;
-padding-top:2.2rem; 
-}
 }
 
+/**Footer*/
+
+footer{
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color:#000080;
+}
+
+.foot-left {
+  margin: 5px;
+  padding: 10px 0;
+ display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000033;
+  width: 50%;
+  height: 100%;
+  border: 2px solid #000333;
+
+  }
+
+  li {
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+    font-size: 25px;
+  }
+
+  .foot-right {
+  margin: 5px;
+  padding: 10px 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000033;
+   width: 50%;
+   height: 100%;
+  border: 2px solid #000333;
+  }
+
+  @media (min-width: 992px) { 
+    footer{
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot-left {
+  padding: 10px 0;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000033;
+  width: 30%;
+
+  }
+
+  .foot-right {
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+
+  }
