@@ -163,7 +163,7 @@ header nav li:last-child {
 @media (max-width: 700px){ 
 	#hire{
     min-height: 800px;
-	padding-top: 120px;
+	padding-top: 80px;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items:center;
