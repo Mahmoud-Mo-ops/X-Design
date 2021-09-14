@@ -216,7 +216,7 @@ textarea{
 }
 
 .btn-feed{
-		width: 25%;
+	width: 35%;
     border: 3px solid #00e600;
     padding: 10px;
     background: transparent;
@@ -257,7 +257,6 @@ textarea{
 }
 
 .btn-feed{
-	width: 25%;
     border: 3px solid #00e600;
     padding: 5px;
     background: transparent;
