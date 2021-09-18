@@ -118,17 +118,21 @@ header nav li:last-child {
 	justify-content: space-around;
 	align-items:center;
 }
+.choice div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+} 
 
 .choice label{
-	width: 20%;
-	  font-size: 25px;
+     font-size: 25px;
 	  font-weight: bold;
 	  padding-right: 5px;
 }
 
 .choice select{
-	    width: 60%;
-		height: 40%;
+        height: 40%;
 		background-color: #fff;
 		outline: none;
 		border: 1px solid #00004d;
@@ -261,21 +265,18 @@ button:hover{
 	}
 
 .choice label{
-	 width: 15%;
 	  font-size: 20px;
 	  padding-right: 5px;
 }
 
 .choice select{
-	    width: 55%;
-		font-size: 20px;
+  	font-size: 20px;
 	   padding: 10px 12px;
 }
 
 }
 @media (max-width: 576px){ 
 .choice div {
-	display: flex;
 	flex-direction: column;
 }
 .choice select{

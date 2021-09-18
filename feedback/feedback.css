@@ -30,7 +30,7 @@ header {
 	left:0;
 	z-index: 10;
 	width: 100%;
-/**/	display: -webkit-flex;
+    display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -84,12 +84,6 @@ header nav li:last-child {
         	margin: 0 ;
         	padding: 5px;
         }
-      /*  header nav li:first-child {
-	    padding-left:0;
-             }
-        header nav li:last-child {
-	          padding-right:0;
-             }*/
 
 	}
 
