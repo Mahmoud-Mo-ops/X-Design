@@ -9,8 +9,7 @@ body {
 	font-family: poppins,sans-serif;
 }
 
-
-ul,nav {
+	ul,nav {
 	list-style: none;
 }
 
@@ -74,11 +73,11 @@ header nav li:last-child {
 			flex-direction: column;
 		}
 		header h2 {
-			margin-bottom: 15px;
+			margin-bottom: 10px;
      	}
         header nav li {
         	margin: 0 ;
-        	padding: 5px;
+        	padding: 4px;
         }
         header nav li:first-child {
 	    padding-left:0;
@@ -103,7 +102,7 @@ header nav li:last-child {
 	flex-direction: column;
 	align-items:center;
 	color:  #fff;
-	background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, transparent),url("../images/apply.jpg_fit=scale") center bottom 90%/cover no-repeat;
+	background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, transparent),url("../images/engineer.jfif") center bottom 90%/cover no-repeat;
 
 }
 
@@ -243,3 +242,49 @@ button:hover{
     font-weight: bold;
 }
 
+@media (max-width: 1000px) { 
+	#date{
+	flex-direction: column;
+	padding-bottom: 20px;
+	
+}
+
+#apply {
+	padding-top: 50px;
+	min-height: 800px;
+	flex-direction: column;
+
+}
+
+.choice {
+	flex-basis: 25%;
+	}
+
+.choice label{
+	 width: 15%;
+	  font-size: 20px;
+	  padding-right: 5px;
+}
+
+.choice select{
+	    width: 55%;
+		font-size: 20px;
+	   padding: 10px 12px;
+}
+
+}
+@media (max-width: 576px){ 
+.choice div {
+	display: flex;
+	flex-direction: column;
+}
+.choice select{
+	    width: 100%;
+		
+}
+
+button{
+	width: 40%;
+   
+}
+}

@@ -572,9 +572,8 @@ section h3,{
 }
 
 .text-right > h4 {
-	background:  #0039e6;
 	width: 80%;
-	color: #fff;
+	color: #0039e6;
 	font-size: 15px;
     margin-bottom:10px;
 }
