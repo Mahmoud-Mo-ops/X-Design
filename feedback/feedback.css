@@ -237,6 +237,9 @@ textarea{
 	.feed-area{
 	padding: 5px 0px;
 	width: 500px;
+	height: 100%;
+	border: none;
+	box-shadow: none;
 }
 .date{
 	  padding: 4px 20px;
