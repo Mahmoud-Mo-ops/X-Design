@@ -104,7 +104,8 @@ header nav li:last-child {
 	padding-top:75px; 
 	width: 100vw;
 	height: 100vh;
-	display: -webkit-flex;
+/*	min-height: 900px;
+*/	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -234,12 +235,17 @@ textarea{
 }
 
 @media (max-width: 1000px) {
+	#feed {
+		padding-top:80px; 
+		min-height: 900px;
+
+	}
 	.feed-area{
 	padding: 5px 0px;
 	width: 500px;
-	height: 100%;
-	border: none;
-	box-shadow: none;
+	min-height: 800px;
+	/*border: none;
+	box-shadow: none;*/
 }
 .date{
 	  padding: 4px 20px;
